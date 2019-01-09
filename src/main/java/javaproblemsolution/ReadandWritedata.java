@@ -27,16 +27,12 @@ public class ReadandWritedata {
  
 		String aLine = null;
 		while ((aLine = in.readLine()) != null) {
-			//Process each line and add output to Dest.txt file
 			out.write(aLine);
 			out.newLine();
 		}
- 
-		// do not forget to close the buffer reader
+ 		
 		in.close();
- 
-		// close buffer writer
-		out.close();
+ 		out.close();
 	}
 		 System.out.println("write succesfully");
 
